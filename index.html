@@ -2,23 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="start-screen">
-        <h1>Welcome to the Coding Quiz</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eaque esse voluptatibus autem voluptas placeat suscipit quam quis vel cupiditate, voluptates modi amet temporibus, aut officia tenetur et distinctio perferendis.</p>
-        <button id="start-button">start</button>
-    </div> 
-    <div id="questions">
-        <h3 id="question-prompt"></h3>
-        <div id="choices"></div>
-    </div>  
+    <header class="header">
+        <button id="highscore">View high scores</button>
+        <p id="timer">Timer:</p>
+    </header>
+
+    <div id ="container" class="container">
+        <div id="homePage" class="homePage">
+            <h1 class="directions">The Coding Quiz</h1>
+            <p>Please answer all of the questions, remember, wrong answers result in a 10 second penalty. Please enter your initials at the end to log your Highscores!</p>
+        </div>
+        <div id="end-page" class="end hide">
+            <h2 class="over">You finished the quiz!</h2>
+            <p id="score"></p>
+            <p>Please enter your initials to be placed on the scoreboard!
+                <input type="text" placeholder="Your initials" id="initials" />
+                <button id="submitBtn" type="button">Submit</button>
+            </p>
+        </div>
+
+        <div id="question-container" class="hide">
+            <div id="question"></div>
+            <div id="answerBtns" class="buttons">
+                <button id='btn1' class="btn"></button>
+                <button id='btn2' class="btn"></button>
+                <button id='btn3' class="btn"></button>
+                <button id='btn4' class="btn"></button>
+            </div>
+        </div>
+        <div id="display" class="correct hide"></div>
+        <div id="display2" class="incorrect hide"></div>
+    </div>
+    <div class="controls">
+        <button id="startBtn" class="startBtn" type="submit">Start Quiz</button>
+    </div>
+    </div>
+
+    <div id="high-scores" class="score-card hide">
+        <h1>Leaderboard</h1>
+        <div id="scores-list" class="scores">
+            <ol id="newScores"></ol>
+            <a href="index.html"><button id="back">Go Back</button></a>
+            <button id="clear">Clear Highscores</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
-<script src="./assets/js/questions.js"></script>
-<script src="./assets/js/script.js"></script>
 
 </html>

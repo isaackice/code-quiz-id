@@ -1,3 +1,120 @@
+:root {
+    --before-color: #aaaaaab2;
+    --after-color: #aaaaaab2;
+}
+
+body {
+    background-color: violet;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#timer {
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.directions {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%; 
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+#question-container {
+    width: 65%;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--before-color);
+    color: blueviolet;
+    padding: 10px;
+    margin: 1% 0 1% 0; 
+    font-size: 20px;   
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.startBtn {
+    color: #000000;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 1% 2%;
+}
+
+.startBtn:hover {
+    background-color: rgb(216, 132, 255);
+}
+
+.btn:hover {
+    background-color: rgb(216, 132, 255);
+}
+
+#question {
+    margin-bottom: 2%;
+    margin-left: 20%;
+    font-size: 175%;
+    font-weight: 700;
+}
+
+.correct {
+    color: green;
+    width: 100%;
+    font-size: 250%;
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.incorrect {
+    color: red;
+    width: 100%;
+    font-size: 250%;
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: center;
+}
+
+#submitBtn {
+    margin-top: 2%;
+    width: 100%;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgb(216, 132, 255);
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: white;
+}
+
+.score-card {
+    text-align: center;
+    font-size: 250%;
+}
+
+.scores ol {
+    text-align: left;
+    padding-left: 47.5%;
+}
+
 .hide {
     display: none;
 }
